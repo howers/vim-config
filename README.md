@@ -64,10 +64,6 @@ mind that this config has comma mapped as the leader key:
   * [Julian/vim-textobj-variable-segment](https://github.com/Julian/vim-textobj-variable-segment) selects pieces of snake case or camel case identifiers. If `|` represents the cursor position:
     * `foo_ba|r_baz -> civquux -> foo_quux_baz`
     * `eggsAn|dCheese -> civOr -> eggsOrCheese`
-* [YankRing](http://www.vim.org/scripts/script.php?script_id=1234)
-lets you view and cycle through your previous copy and paste registers on the fly
-  * After pasting use `<C-tab>` and `<C-S-tab>` to cycle through previously copied text.
-  * In normal mode press `F6` to view previously copied text. Select one to paste it.
 * [terryma/vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors) gives you multiple cursor support, similar to Sublime Text.
   * While in normal mode, press `<C-n>` to add a second cursor on the next occurance of the word or symbol under your cursor.
   * Use `<C-v>` to make a vertical selection, then press `<C-n>` to convert the selection into multiple cursors.
@@ -104,9 +100,16 @@ lets you view and cycle through your previous copy and paste registers on the fl
 * [vim-dispatch](https://github.com/tpope/vim-dispatch) supplies `:Make` and `:Make!` which run in the background instead of blocking like `:make`.
 * [ConqueTerm](http://code.google.com/p/conque/) lets your run interactive commands within vim.  Try `:ConqueTerm bash`.
 * [vitality.vim](https://github.com/sjl/vitality.vim) makes Vim play nicely with iTerm2 and tmux. It adds things like cursor change on insert mode and focus-lost detection for triggering auto-save.
-* [test_server](https://github.com/brysgo/test_server) lets you use F9 thru F12 to run specs and report the output in vim.
-* [vim-simple-bdd](https://github.com/mdelillo/vim-simple-bdd) generates method declarations from [simple_bdd](https://github.com/robb1e/simple_bdd) steps
 * [neomake](https://github.com/neomake/neomake) gives you asynchronous linting and a make framework in vim.
+* [vim-tmux-navigatore](https://github.com/christoomey/vim-tmux-navigator) navigate seamlessly between vim and tmux panes 
+
+## Removed Plugins
+* [vim-simple-bdd](https://github.com/mdelillo/vim-simple-bdd) generates method declarations from [simple_bdd](https://github.com/robb1e/simple_bdd) steps
+* [test_server](https://github.com/brysgo/test_server) lets you use F9 thru F12 to run specs and report the output in vim.
+* [YankRing](http://www.vim.org/scripts/script.php?script_id=1234)
+lets you view and cycle through your previous copy and paste registers on the fly
+  * After pasting use `<C-tab>` and `<C-S-tab>` to cycle through previously copied text.
+  * In normal mode press `F6` to view previously copied text. Select one to paste it.
 
 ## Colorschemes
 * [Vivid Chalk](https://github.com/tpope/vim-vividchalk)

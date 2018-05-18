@@ -81,8 +81,6 @@ else
   Plugin 'tomtom/tlib_vim'
   Plugin 'garbas/vim-snipmate'
   Plugin 'honza/vim-snippets'
-  Plugin 'YankRing.vim'
-  Plugin 'terryma/vim-multiple-cursors'
   Plugin 'editorconfig/editorconfig-vim'
   Plugin 'tpope/vim-projectionist'
   Plugin 'kien/rainbow_parentheses.vim'
@@ -140,11 +138,9 @@ else
   Plugin 'tpope/vim-fugitive'
   Plugin 'airblade/vim-gitgutter'
   Plugin 'pivotal/tmux-config'
+  Plugin 'christoomey/vim-tmux-navigator'
   Plugin 'tpope/vim-dispatch'
-  Plugin 'carlobaldassi/ConqueTerm'
   Plugin 'sjl/vitality.vim'
-  Plugin 'brysgo/test_server'
-  Plugin 'mdelillo/vim-simple-bdd'
   Plugin 'neomake/neomake'
 
   call vundle#end()
