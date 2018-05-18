@@ -145,6 +145,7 @@ else
   Plugin 'sjl/vitality.vim'
   Plugin 'brysgo/test_server'
   Plugin 'mdelillo/vim-simple-bdd'
+  Plugin 'neomake/neomake'
 
   call vundle#end()
 
