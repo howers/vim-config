@@ -55,6 +55,12 @@ set hls                         " search with highlights by default
 " Write all writeable buffers when changing buffers or losing focus.
 set autowriteall                " Save when doing various buffer-switching things.
 autocmd BufLeave,FocusLost * silent! wall  " Save anytime we leave a buffer or MacVim loses focus.
+" Get rid of those pesky end of line spaces
+autocmd BufWritePre * :%s/\s\+$//e
+" Prettier things
+" autocmd FileType javascript set formatprg=prettier\ --stdin
+" autocmd BufWritePre *.js :normal gggqG
+
 
 let g:sql_type_default="postgresql"
 
