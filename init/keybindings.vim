@@ -182,13 +182,10 @@ nmap <leader>l :TagbarToggle<CR>
 map <D-F> :Ag<Space>
 
 " YankRing show registers
-:nnoremap <silent> <F6> :YRShow<CR>
+" :nnoremap <silent> <F6> :YRShow<CR>
 
 " Convert a word to to let(:word) { double(:word) }
 nmap <leader>ld <Plug>LocalMakelet
 
 nmap <leader>rp :RainbowParenthesesToggle<CR>
 
-" Convert simple_bdd steps into methods
-nnoremap <leader>bdd :SimpleBDD<CR>
-vnoremap <leader>bdd :SimpleBDD<CR>

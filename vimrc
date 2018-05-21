@@ -133,6 +133,12 @@ else
   Plugin 'luan/vim-concourse'
 
   "
+  " Markdown help
+  "
+  Plugin 'junegunn/goyo.vim'
+  Plugin 'reedes/vim-pencil'
+
+  "
   " Development Tool Integration
   "
   Plugin 'tpope/vim-fugitive'

@@ -36,5 +36,3 @@ autocmd BufRead,BufNewFile *.jasmine_fixture set filetype=html
 " Insert ' => '
 autocmd FileType ruby imap  <Space>=><Space>
 
-" Open all folds in Markdown.
-autocmd FileType mkd normal zR
