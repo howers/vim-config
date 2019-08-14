@@ -86,6 +86,12 @@ else
   Plugin 'kien/rainbow_parentheses.vim'
 
   "
+  " Markdown
+  "
+  Plugin 'junegunn/goyo.vim'
+  Plugin 'reedes/vim-pencil'
+
+  "
   " Window Management
   "
   Plugin 'ZoomWin'
@@ -130,7 +136,6 @@ else
   Plugin 'digitaltoad/vim-pug'
   Plugin 'elixir-lang/vim-elixir'
   Plugin 'luan/vim-concourse'
-
   "
   " Markdown help
   "
@@ -156,7 +161,20 @@ else
 
   runtime! init/**.vim
 
+  if $TMUX == ''
+    set clipboard+=unnamed
+  end
+
   if filereadable($HOME . "/.vimrc.local")
     source ~/.vimrc.local
   endif
+
 endif
+
+set mouse+=a
+if &term =~ '^screen'
+  " tmux knows the extended mouse mode
+  set ttymouse=xterm2
+endif
+
+let g:jsx_ext_required = 0
