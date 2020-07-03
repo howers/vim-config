@@ -53,6 +53,7 @@ else
   "
   " General Editing
   "
+  Plugin 'prettier/vim-prettier'
   Plugin 'tpope/vim-repeat'
   Plugin 'tpope/vim-surround'
   Plugin 'scrooloose/nerdcommenter'
