@@ -1,5 +1,6 @@
 " .md files read as markdown
 autocmd BufNewFile,BufRead *.md set filetype=markdown
+autocmd BufNewFile,BufRead *.mdx set filetype=markdown
 
 " Open all folds in Markdown.
 autocmd FileType markdown normal zR
@@ -9,5 +10,5 @@ let g:pencil#wrapModeDefault = 'soft'
 
 augroup pencil
   autocmd!
-  autocmd FileType markdown call pencil#inti()
+  autocmd FileType markdown call pencil#init()
 augroup END

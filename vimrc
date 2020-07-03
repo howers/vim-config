@@ -111,7 +111,6 @@ else
   "
   Plugin 'vim-ruby/vim-ruby'
   Plugin 'pangloss/vim-javascript'
-  Plugin 'plasticboy/vim-markdown'
   Plugin 'slim-template/vim-slim'
   Plugin 'nono/vim-handlebars'
   Plugin 'kchmck/vim-coffee-script'
@@ -133,6 +132,8 @@ else
   Plugin 'elixir-lang/vim-elixir'
   Plugin 'luan/vim-concourse'
   Plugin 'jparise/vim-graphql'
+  Plugin 'posva/vim-vue'
+  Plugin 'prettier/vim-prettier'
 
   "
   " Markdown help
