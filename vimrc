@@ -131,6 +131,7 @@ else
   Plugin 'digitaltoad/vim-pug'
   Plugin 'elixir-lang/vim-elixir'
   Plugin 'luan/vim-concourse'
+  Plugin 'jparise/vim-graphql'
 
   "
   " Markdown help
