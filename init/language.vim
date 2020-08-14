@@ -8,6 +8,13 @@ function! StripTrailingWhitespace()
   call setpos('.', save_cursor)
 endfunction
 
+function! SetUpEnvironment()
+  let l:path = expand('%:p')
+  if l:path =~ 'doximity-client-vue'
+    setlocal includeexpr=substitute(v:fname,'\\~/','','g') suffixesadd+=.vue
+  endif
+endfunction
+
 " C family
 autocmd BufWritePre *.m,*.h,*.c,*.mm,*.cpp,*.hpp call StripTrailingWhitespace()
 
@@ -22,6 +29,7 @@ au BufRead,BufNewFile *.hamlc set ft=haml
 
 " JavaScript, ECMAScript
 au BufRead,BufNewFile *.es6 set ft=javascript
+" au BufRead,BufNewFile *.vue set ft=javascript
 
 " Highlight Ruby files
 au BufRead,BufNewFile *.thor set filetype=ruby
@@ -36,3 +44,10 @@ autocmd BufRead,BufNewFile *.jasmine_fixture set filetype=html
 " Insert ' => '
 autocmd FileType ruby imap  <Space>=><Space>
 
+" mess around with the expectations for the filename when messing around with
+" vue
+augroup js
+  autocmd!
+  autocmd FileType vue call SetUpEnvironment() 
+  autocmd FileType javascript call SetUpEnvironment() 
+augroup END
