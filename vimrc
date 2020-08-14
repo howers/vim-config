@@ -53,6 +53,7 @@ else
   "
   " General Editing
   "
+  Plugin 'prettier/vim-prettier'
   Plugin 'tpope/vim-repeat'
   Plugin 'tpope/vim-surround'
   Plugin 'scrooloose/nerdcommenter'
@@ -130,8 +131,8 @@ else
   Plugin 'digitaltoad/vim-pug'
   Plugin 'elixir-lang/vim-elixir'
   Plugin 'luan/vim-concourse'
+  Plugin 'jparise/vim-graphql'
   Plugin 'posva/vim-vue'
-  Plugin 'prettier/vim-prettier'
 
   "
   " Markdown help
