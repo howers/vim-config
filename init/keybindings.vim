@@ -117,8 +117,10 @@ imap <F1>           <Nop>
 " Easy access to the shell
 map <Leader><Leader> :!
 
+map <leader>a :AV<CR>
+
 " AckGrep current word
-map <leader>a :call AckGrep()<CR>
+" map <leader>a :call AckGrep()<CR>
 " AckVisual current selection
 vmap <leader>a :call AckVisual()<CR>
 
@@ -189,3 +191,7 @@ nmap <leader>ld <Plug>LocalMakelet
 
 nmap <leader>rp :RainbowParenthesesToggle<CR>
 
+
+" Open the url under the cursor w/ a browser
+" https://stackoverflow.com/a/63352904
+nmap <silent>gx :sil :!open <c-r><c-a>

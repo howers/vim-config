@@ -46,8 +46,7 @@ autocmd FileType ruby imap  <Space>=><Space>
 
 " mess around with the expectations for the filename when messing around with
 " vue
-augroup js
-  autocmd!
-  autocmd FileType vue call SetUpEnvironment() 
-  autocmd FileType javascript call SetUpEnvironment() 
-augroup END
+" augroup js
+  " autocmd!
+  " autocmd FileType vue setlocal includeexpr=substitute(v:fname,'\\~/','','g') suffixesadd+=.vue
+" augroup END

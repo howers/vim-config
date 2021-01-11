@@ -65,8 +65,8 @@ else
   Plugin 'sjl/gundo.vim'
   Plugin 'godlygeek/tabular'
   Plugin 'scrooloose/syntastic'
-  Plugin 'vim-airline/vim-airline'
-  Plugin 'vim-airline/vim-airline-themes'
+  " Plugin 'vim-airline/vim-airline'
+  " Plugin 'vim-airline/vim-airline-themes'
   Plugin 'ervandew/supertab'
   Plugin 'nertzy/j-split'
   Plugin 'matt-royal/diffthese'
@@ -144,6 +144,7 @@ else
   " Development Tool Integration
   "
   Plugin 'tpope/vim-fugitive'
+  Plugin 'tpope/vim-rhubarb'
   Plugin 'airblade/vim-gitgutter'
   Plugin 'pivotal/tmux-config'
   Plugin 'christoomey/vim-tmux-navigator'
