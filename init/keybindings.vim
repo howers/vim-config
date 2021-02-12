@@ -55,11 +55,17 @@ imap <D-CR>     <Esc>o
 nnoremap <C-e>  3<C-e>
 nnoremap <C-y>  3<C-y>
 
-" File tree browser
-map \           :NERDTreeToggle<CR>
+" Try out vim-vinegar instaed of nerd tree
+map \|            :Explore<CR>
+" File tree browser 
+map \           :NERDTreeFind<CR>
 
-" File tree browser showing current file - pipe (shift-backslash)
-map \|          :NERDTreeFind<CR>
+" " File tree browser showing current file - pipe (shift-backslash)
+" map \|          |:NERDTreeFind<CR>
+
+map <leader>/   <plug>NERDCommenterToggle
+map <D-/>       <plug>NERDCommenterToggle
+imap <D-/>      <Esc><plug>NERDCommenterToggle i
 
 " Previous/next quickfix file listings (e.g. search results)
 map <M-D-Down>  :cn<CR>
@@ -83,9 +89,6 @@ map <leader>rt :!~/.vim/bin/update_ctags 2>/dev/null &<CR>
 map <leader>g   :Gblame<CR>
 
 " Comment/uncomment lines
-map <leader>/   <plug>NERDCommenterToggle
-map <D-/>       <plug>NERDCommenterToggle
-imap <D-/>      <Esc><plug>NERDCommenterToggle i
 
 " In command-line mode, <C-A> should go to the front of the line, as in bash.
 cmap <C-A> <C-B>

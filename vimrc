@@ -104,6 +104,7 @@ else
   " Navigation
   "
   Plugin 'scrooloose/nerdtree'
+  Plugin 'tpope/vim-vinegar'
   Plugin 'majutsushi/tagbar'
 
   "
